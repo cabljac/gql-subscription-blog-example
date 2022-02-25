@@ -11,7 +11,7 @@ const performSubscription = async (client, query: string) => {
 
       console.log(event);
 
-      if (events.length === 1) {
+      if (events.length > 4) {
         unsubscribe();
       }
     };
